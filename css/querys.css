@@ -1,0 +1,26 @@
+@media screen and (orientation: landscape) and (min-width: 730px) {
+  .card {
+    display: flex;
+    width: 80%;
+    max-width: none;
+  }
+  
+  .top {
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-right: 2px solid #6a6a6a;
+  }
+  
+  .stats {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  :root {
+    font-size: 19px;
+  }
+}
