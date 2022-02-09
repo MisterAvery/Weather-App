@@ -1,0 +1,114 @@
+:root {
+  font-size: 17px;
+  --accent-color: #aaa;
+}
+/*blue: #77aeeb*/
+/*green: #126a2a*/
+/*red: #f44*/
+
+.red {
+  color: var(--accent-color);
+  font-family: 'Baloo Bhaijaan 2', Sans-Serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(178deg, #fff 85%, var(--accent-color) 85%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Oxygen', Monospace, Sans-Serif;
+}
+
+.card {
+  display: block;
+  background: #fff;
+  width: 55%;
+  min-width: 300px;
+  height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0.4rem #2227;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #656565;
+  height: 66%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.top .labels { transform: translate(0, -25%); }
+
+.labels h1 {
+  font-size: 4.8rem;
+  margin-top: 2rem;
+  color: var(--accent-color);
+}
+
+.labels .date, .labels h1 {
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 0.15em;
+  background: #eeea;
+  border-radius: 12px;
+}
+
+.stats {
+  height: 34%;
+  overflow: auto;
+  color: var(--accent-color);
+}
+
+.stats .stat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0.8rem 1.3rem;
+}
+
+.stat .left {
+  font-size: 1.4rem;
+  color: #6a6a6a;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column !important;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 0.15em;
+}
+
+.forcast {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  overflow-x: auto;
+}
+
+.forcast-block {
+  border-right: 1px solid #eee;
+  padding: 0.6rem 0;
+  text-align: center;
+  min-width: 22%;
+}
