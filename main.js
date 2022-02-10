@@ -30,7 +30,7 @@ function getData(elms) {
     let {longitude, latitude} = position.coords;
     
     // fetch weather data based on curent location
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=1a63b31fa752648c49caa682197af3d8&units=imperial`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=1a63b31fa752648c49caa682197af3d8&units=imperial`)
   		.then(res => res.json())
   		.then(data => update(data, elms))
   	  .catch(error => failure);
